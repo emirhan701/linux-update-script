@@ -9,7 +9,7 @@ case "$distro" in
         sudo apt update -y && sudo apt upgrade -y
         ;;
     fedora|rhel|centos)
-        sudo dnf update -y && sudo dnf upgrade -y
+        sudo dnf update --refresh -y && sudo dnf upgrade -y
         sudo yum update -y && sudo yum upgrade -y
         ;;
     arch|manjaro)
