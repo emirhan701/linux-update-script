@@ -14,6 +14,20 @@ case "$distro" in
         ;;
     arch|manjaro|cachyos)
         sudo pacman -Syyu --noconfirm
+
+        # yay varsa güncelle
+        if command -v yay &> /dev/null; then
+            yay -Syu --noconfirm
+        else
+            echo "yay yüklü değil, atlanıyor."
+        fi
+
+        # paru varsa güncelle
+        if command -v paru &> /dev/null; then
+            paru -Syu --noconfirm
+        else
+            echo "paru yüklü değil, atlanıyor."
+        fi
         ;;
     *)
         echo "Desteklenmeyen dağıtım: $distro"
