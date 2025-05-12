@@ -12,7 +12,7 @@ case "$distro" in
         sudo dnf update --refresh -y && sudo dnf upgrade -y
         sudo yum update -y && sudo yum upgrade -y
         ;;
-    arch|manjaro)
+    arch|manjaro|cachyos)
         sudo pacman -Syu --noconfirm
         ;;
     *)
