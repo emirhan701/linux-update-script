@@ -13,7 +13,7 @@ case "$distro" in
         sudo yum update -y && sudo yum upgrade -y
         ;;
     arch|manjaro|cachyos)
-        sudo pacman -Syu --noconfirm
+        sudo pacman -Syyu --noconfirm
         ;;
     *)
         echo "Desteklenmeyen dağıtım: $distro"
