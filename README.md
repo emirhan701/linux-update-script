@@ -14,7 +14,7 @@ Ayrıca **Snap** ve **Flatpak** güncellemelerini de kontrol eder.
 ### Kullanım:
 ```bash
 chmod +x update.sh
-./update.sh
+bash update.sh
 ```
 
 ---
@@ -33,5 +33,5 @@ After the update process is complete, it asks the user whether they want to rest
 ### Usage:
 ```bash
 chmod +x update.sh
-./update.sh
+bash update.sh
 ```
